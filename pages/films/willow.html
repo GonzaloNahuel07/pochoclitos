@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en-AR">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="blog, películas, cine, movie, series, recomendaciones, taquillero, tv, streaming, estrenos, acotres, actrices, reparto, críticas, clásicos, calificaciones, disney, hbo max, netflix, amazone prime, star plus, flow, paramount plus, crunchyroll, Acción, Aventuras, Ciencia Ficción, Comedia, Documental, Drama, Fantasía, Musical, Suspenso, Terror, Thriller, anime">
+    <meta name="description"
+        content="En Pochoclitos Blog encuentra las mejores recomendaciones de películas y series. Noticias, críticas, curiosidades e información de cine y las series del momento.">
+    <meta name="author" content="Pochoclitos Blog">
+    <link rel="icon" href="../../images/icons/logo.png">
+    <title>Willow</title>
+    <link rel="stylesheet" href="../../css/flims/willow.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    </head>
+    <body class="body">
+    <header class="container__header">
+        <div class="nav__mobile-menu">
+            <a href="#nav" class="open">
+                <i class="bi bi-list"></i>
+            </a>
+            <a href="/pages/login.html"><i class="login-icon bi bi-person-circle"></i></a>
+        </div>
+
+        <nav id="nav" class="nav__container">
+            <a href="#" class="close">
+                <img src="/images/icons/close.png" alt="Cerrar">
+            </a>
+
+            <ul class="nav__menu">
+                <div>
+                    <li><a href="/index.html"><img class="logo" id="inicio" src="/images/icons/logo.png"                    alt="Logo-pochoclitos"></a> </li>
+                </div>
+                <li class="nav__menu-items"><a class="active" href="/index.html">INICIO</a></li>
+                <li class="nav__menu-items"><a href="/pages/about-us.html">NOSOTROS</a></li>
+                <li class="nav__menu-items"><a href="/pages/recommendation.html">RECOMENDACIONES</a></li>
+                <li class="nav__menu-items item-contacto"><a href="/pages/contact.html">CONTACTO</a></li>
+                <div class="nav__login-register">
+                    <li class="nav__menu-login"><a href="/pages/login.html">INICIAR SESIÓN</a></li>
+                    <li class="nav__menu-register">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn-d nav__menu-register text-white py-0 px-0 fw-semibold"
+                            data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            REGISTRARSE
+                        </button>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <!-- Modal -->
+    <div class="container">
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 pt-3" id="staticBackdropLabel">Registrarse:</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control bg-secondary bg-opacity-25"
+                                        placeholder="Nombre y Apellido" aria-label="First name">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control bg-secondary bg-opacity-25"
+                                        placeholder="Nombre de usuario" aria-label="First name">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control bg-secondary bg-opacity-25" id="inputEmail3"
+                                        placeholder="Correo electrrónico">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control bg-secondary bg-opacity-25" id="inputEmail3"
+                                        placeholder="Repetir correo electrrónico">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control bg-secondary bg-opacity-25"
+                                        id="inputPassword3" placeholder="Contraseña">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control bg-secondary bg-opacity-25"
+                                        id="inputPassword3" placeholder="Repetir contraseña">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-12">
+                                    <div class="form-chec custom-control custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox"
+                                            id="gridCheck">
+                                        <label class="form-check-label custom-control-label" for="gridCheck">
+                                            Suscríbete a nuestro Newsletter
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-register text-white fw-normal">Registrarse</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container__wpp-icon">
+        <section class="section">
+            <div class="section__leading leading">
+                <div class="leading__back">
+                    <a class="leading__back--btn" href="../../index.html">
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+                </div>
+                <h1 class="section__leading--title">
+                    Willow
+                </h1>
+                <img class="section__leading--img" src="../../images/willow/willow-img.png" alt="Foto MoonKnigth">
+                <p class="section__leading--description">
+                    Una prisionera da a luz a un bebé en las mazmorras del castillo de la malvada reina Bavmorda. Según una antigua profecía, esta niña acabará con el reinado de la perversa hechicera que al más puro estilo de Herodes ordena encarcelar a todas las embarazadas para matar a la niña que nazca con la marca. 
+                    <br><br>
+                    Pero la madre de la bebé pide ayuda a la comadrona que huye con la niña al bosque. Meses después, atacada por unas criaturas de Bavmorda deja la cuna en el río abajo para salvar a la niña. Ranon y Mims, los hijos de Willow Ufgood, un enano del pueblo de los peks, que trabaja como agricultor, descubren a la niña cuando jugaban cerca del río. 
+                    <br><br>
+                    Desde ese momento el bebé está bajo el cuidado de la familia de Willow. Pero cuando dos terribles criaturas con aspecto de lobos atacan el pueblo de Willow, éste pronto entenderá que el destino de la niña es provocar la caída de la malvada reina Bavmorda y emprende un viaje para lograrlo. 
+                    <br><br>
+                    El pequeño Willow necesitará ayuda para proteger a la niña y por ello contará con el espadachín Madmartigan, la hechicera Fin Razel, Franjean y Rool, quienes harán todo lo posible por mantener a salvo a la niña y que la profecía se cumpla.
+                </p>
+            </div>
+            <div class="section__trailer">
+                <iframe class="section__trailer--video" width="560" height="315" src="https://www.youtube.com/embed/i_NKBLRacME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                <div class="section__trailer--stats stats">
+                    <ul class="stats__list">
+                        <li class="stats__list--item item">
+                            <span class="item__title--decorate">Genero :</span> Fantasía
+                        </li>
+                        <li class="stats__list--item">
+                            <span class="item__title--decorate">Director :</span> Ron Howard
+                        </li>
+                        <li class="stats__list--item">
+                            <span class="item__title--decorate">Disponible en :</span> Disney +
+                        </li>
+                        <li class="stats__list--item">
+                            <span class="item__title--decorate">Año :</span> 2022
+                        </li>
+                        <li class="stats__list--item">
+                            <span class="item__title--decorate">Calificación :</span> 
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="section__trailer--plataform plataform">
+                    <p class="plataform__title">Disponible en:</p>
+                    <a href="https://www.disneyplus.com/es-ar" target="_blank"><img class="plataform__img" src="../../images/plataform/plataform-img.png" alt="Logo de disney plus"></a>
+                </div>
+            </div>
+        </section>
+        <section class="section__feedback">
+            <div class="section__trailer--comments comments">
+                <div class="comments__header">
+                    <h4 class="comments__header--title">
+                        Dejanos tu comentario
+                    </h4>
+                    <div class="comments__header--order order">
+                        <p class="order__title">
+                            Ordernar por:
+                        </p>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-primary dropdown-toggle px-2" data-bs-toggle="dropdown" aria-expanded="false">
+                                Todos
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item">
+                                        Recientes
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item">
+                                        Relevantes
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container__comments comments">
+                    <div class="row p-0 m-0 comments__row">
+                        <div class="col-12 p-0 my-3 comments__col">
+                            <div class="form__media media d-flex">
+                                <img class="media__image rounded-circle" src="../../images/coments_users/foto-user.png" alt="user 1" width="50" height="50">
+                                <form class="media__form media d-flex">
+                                    <textarea class="media__input" type="text" placeholder="Comentar..." ></textarea>
+                                    <a class="media__boton border-0 bg-transparent m-auto">
+                                    <i class="bi bi-send-fill"></i>
+                                    </a>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-12 p-0 my-2 comments__col">
+                            <div class="form__media media d-flex align-items-start">
+                                <img class="media__image rounded-circle" src="../../images/coments_users/user-1.png" alt="user 1" width="50" height="50">
+                                <div class="media__body">
+                                    <p class="media__body--name">Javi</p>
+                                    <p class="media__body--comment">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam dolore similique
+                                    </p>
+                                    <div class="media__body-btns btns text-right d-flex">
+                                        <a class="btns__btn--like ms-2">Me gusta</a>
+                                        <a class="btns__btn--answe ms-2">Responder</a>
+                                        <i class="bi bi-hand-thumbs-up-fill ms-2"><span class="span__likes">1</span></i>
+                                        <p class="btns__btn--day ms-3">1 día</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 p-0 my-2 comments__col">
+                            <div class="form__media media d-flex align-items-start">
+                                <img class="media__image rounded-circle" src="../../images/coments_users/user-2.png" alt="user 1" width="50" height="50">
+                                <div class="media__body">
+                                    <p class="media__body--name">Ramiro</p>
+                                    <p class="media__body--comment">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam dolore similique
+                                    </p>
+                                    <div class="media__body-btns btns text-right d-flex">
+                                        <a class="btns__btn--like ms-2">Me gusta</a>
+                                        <a class="btns__btn--answe ms-2">Responder</a>
+                                        <i class="bi bi-hand-thumbs-up-fill ms-2"><span class="span__likes">4</span></i>
+                                        <p class="btns__btn--day ms-3">1 día</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 p-0 my-2 comments__col">
+                            <div class="form__media media d-flex align-items-start">
+                                <img class="media__image rounded-circle" src="../../images/coments_users/user-3.png" alt="user 1" width="50" height="50">
+                                <div class="media__body">
+                                    <p class="media__body--name">Matías</p>
+                                    <p class="media__body--comment">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam dolore similique
+                                    </p>
+                                    <div class="media__body-btns btns text-right d-flex">
+                                        <a class="btns__btn--like ms-2">Me gusta</a>
+                                        <a class="btns__btn--answe ms-2">Responder</a>
+                                        <i class="bi bi-hand-thumbs-up-fill ms-2"><span class="span__likes">2</span></i>
+                                        <p class="btns__btn--day ms-3">2 día</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 p-0 my-2 comments__col">
+                            <div class="form__media media d-flex align-items-start">
+                                <img class="media__image rounded-circle" src="../../images/coments_users/user-4.png" alt="user 1" width="50" height="50">
+                                <div class="media__body">
+                                    <p class="media__body--name">Sofi</p>
+                                    <p class="media__body--comment">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam dolore similique
+                                    </p>
+                                    <div class="media__body-btns btns text-right d-flex">
+                                        <a class="btns__btn--like ms-2">Me gusta</a>
+                                        <a class="btns__btn--answe ms-2">Responder</a>
+                                        <i class="bi bi-hand-thumbs-up-fill ms-2"><span class="span__likes">5</span></i>
+                                        <p class="btns__btn--day ms-3">3 día</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 p-0 my-2 comments__col">
+                            <div class="form__media media d-flex align-items-start">
+                                <img class="media__image rounded-circle" src="../../images/coments_users/user-5.png" alt="user 1" width="50" height="50">
+                                <div class="media__body">
+                                    <p class="media__body--name">Lourdes</p>
+                                    <p class="media__body--comment">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam dolore similique
+                                    </p>
+                                    <div class="media__body-btns btns text-right d-flex">
+                                        <a class="btns__btn--like ms-2">Me gusta</a>
+                                        <a class="btns__btn--answe ms-2">Responder</a>
+                                        <i class="bi bi-hand-thumbs-up-fill ms-2"><span class="span__likes">4</span></i>
+                                        <p class="btns__btn--day ms-3">5 día</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a href="../error-404.html"><img class="wpp-icon" src="/images/icons/whatsapp.png" alt="Whatsapp"></a>
+    </div>
+    <footer class="container__footer">
+        <h2 class="footer__title">POCHOCLITOS</h2>
+        <div class="footer__container-contact">
+            <div class="footer__container-logo">
+                <img class="footer__logo" src="/images/icons/logo.png" alt="Logo">
+            </div>
+
+            <div class="footer__icons">
+                <a href="../error-404.html"><i class="icon-redes bi bi-twitter text-white fs-1"></i></a>
+                <a href="../error-404.html"><i class="icon-redes bi bi-instagram text-white fs-1"></i></a>
+                <a href="../error-404.html"><i class="icon-redes bi bi-facebook text-white fs-1"></i></a>
+            </div>
+            <div class="footer__contact">
+                <p>Vía e-mail: pelis@pochoclitos.com</p>
+                <p>Redes sociales: @pochoclitos</p>
+                <p>Teléfono: 0123-4567</p>
+            </div>
+        </div>
+        <p class="footer__reserved">©Pochoclitos 2022 - Todos los derechos reservados.</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    </body>
+</html>

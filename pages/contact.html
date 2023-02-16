@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="blog, películas, cine, movie, series, recomendaciones, taquillero, tv, streaming, estrenos, acotres, actrices, reparto, críticas, clásicos, calificaciones, disney, hbo max, netflix, amazone prime, star plus, flow, paramount plus, crunchyroll, Acción, Aventuras, Ciencia Ficción, Comedia, Documental, Drama, Fantasía, Musical, Suspenso, Terror, Thriller, anime">
+    <meta name="description" content="En Pochoclitos Blog encuentra las mejores recomendaciones de películas y series. Noticias, críticas, curiosidades e información de cine y las series del momento.">
+    <meta name="author" content="Pochoclitos Blog">
+    <link rel="icon" href="../images/icons/logo.png">
+    <title>Contáctanos</title>
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body class="bg-body">
+    <header class="container__header">
+        <div class="nav__mobile-menu">
+            <a href="#nav" class="open"><img src="../images/icons/menu2.png" alt="Menu"></a>
+            <a href="../pages/login.html"><i class="login-icon bi bi-person-circle text-white fs-1"></i></a>
+        </div>
+
+        <nav id="nav" class="nav__container">
+            <a href="#" class="close"><img src="../images/icons/close.png"  alt="Cerrar"></a>
+
+            <ul class="nav__menu">
+                <div>
+                    <li><a href="../index.html"><img class="logo" id="inicio" src="../images/icons/logo.png" alt="Logo-pochoclitos"/></a> </li>
+                </div>
+                <li class="nav__menu-items"><a class="active" href="../index.html">INICIO</a></li>
+                <li class="nav__menu-items"><a href="../pages/about-us.html">NOSOTROS</a></li>
+                <li class="nav__menu-items"><a href="../pages/recommendation.html">RECOMENDACIONES</a></li>
+                <li class="nav__menu-items nav__item-select"><a href="../pages/contact.html">CONTACTO</a></li>
+                <div class="nav__login-register">
+                    <li class="nav__menu-login"><a href="../pages/login.html">INICIAR SESIÓN</a></li>
+                    <li class="nav__menu-register">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn nav__menu-register text-white py-0 px-0 fw-semibold" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            REGISTRARSE
+                        </button>
+                    </li>
+                </div>
+            </ul>
+        </nav> 
+    </header>
+
+    <!-- Modal -->
+    <div class="container">
+
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 pt-3 text-dark" id="staticBackdropLabel">Registrarse:</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control bg-secondary bg-opacity-25" placeholder="Nombre y Apellido" aria-label="First name">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control bg-secondary bg-opacity-25" placeholder="Nombre de usuario" aria-label="First name">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control bg-secondary bg-opacity-25" id="inputEmail3" placeholder="Correo electrrónico">
+                            </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-sm-10">
+                                <input type="email" class="form-control bg-secondary bg-opacity-25" id="inputEmail3" placeholder="Repetir correo electrrónico">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control bg-secondary bg-opacity-25" id="inputPassword3" placeholder="Contraseña">
+                            </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-sm-10">
+                                <input type="password" class="form-control bg-secondary bg-opacity-25" id="inputPassword3" placeholder="Repetir contraseña">
+                                </div>
+                            </div>
+                        
+                            <div class="row mb-3">
+                                <div class="col-12">
+                                    <div class="form-chec custom-control custom-checkbox">
+                                      <input class="form-check-input custom-control-input" type="checkbox" id="gridCheck">
+                                      <label class="form-check-label custom-control-label text-dark" for="gridCheck">
+                                        Suscríbete a nuestro Newsletter
+                                      </label>
+                                    </div>
+                                  </div>
+                            </div>
+                            <button type="submit" class="btn btn-register text-white fw-normal">Registrarse</button>
+                        </form>
+                    </div>
+                
+                </div>
+            </div>
+        </div> 
+    </div>
+
+
+    <main>
+        <div class="container__wpp-icon">
+
+            <div class="container__contact">
+                <h3 class="contact__title"><span class="letter-big">C</span>ontacto</h3>
+                <div class="container__contact-flex">
+                    <form class="contact__form">
+                        <div class="row mb-3 mb-lg-3">
+                            <div>
+                                <input type="text" class="form-width form-control bg-light" placeholder="Nombre" aria-label="First name">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 mb-lg-3">
+                            <div>
+                                <input type="text" class="form-width form-control bg-light" placeholder="Apellido" aria-label="Last name">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 mb-lg-3">
+                            <div>
+                                <input type="email" class="form-control bg-light" id="inputEmail3" placeholder="Correo electrrónico">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 mb-lg-3">
+                            <div>
+                                <input type="number" class="form-control bg-light" id="inputNumber" placeholder="Teléfono">
+                            </div>
+                        </div>     
+                        
+                        <div class="mb-3 mb-lg-3">
+                            <div>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Consulta" rows="3"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 lg-mb-0">
+                            <button type="submit" class="btn btn-register text-white fw-normal">Enviar</button>
+                        </div>
+                    </form>
+
+                    <div class="contact__adress">
+                        <iframe class="contact__adress-map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d105144.56531667229!2d-58.46895269566665!3d-34.559437474926604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1splanetario!5e0!3m2!1ses-419!2sar!4v1666507886730!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p class="contact__adress-text">Domicilio: Avenida Sarmiento s/n, 1425 CABA</p>
+                    </div>
+                </div>
+            </div>
+            <a href="../pages/error-404.html"><img class="wpp-icon" src="../images/icons/whatsapp.png" alt="Whatsapp"></a>
+        </div>
+    </main>
+
+    <footer class="container__footer">
+        <h2 class="footer__title">POCHOCLITOS</h2>
+        <div class="footer__container-contact">
+            <div class="footer__container-logo">
+                <img class="footer__logo" src="../images/icons/logo.png" alt="Logo">
+            </div>
+            
+            <div class="footer__icons">
+                <a href="../pages/error-404.html"><i class="icon-redes bi bi-twitter text-white fs-1"></i></a>
+                <a href="../pages/error-404.html"><i class="icon-redes bi bi-instagram text-white fs-1"></i></a>
+                <a href="../pages/error-404.html"><i class="icon-redes bi bi-facebook text-white fs-1"></i></a>
+            </div>
+            <div class="footer__contact">
+                <p>Vía e-mail: pelis@pochoclitos.com</p>
+                <p>Redes sociales: @pochoclitos</p>
+                <p>Teléfono: 0123-4567</p>
+            </div>
+        </div>
+        <p class="footer__reserved">©Pochoclitos 2022 - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

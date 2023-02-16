@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en-AR">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="blog, películas, cine, movie, series, recomendaciones, taquillero, tv, streaming, estrenos, acotres, actrices, reparto, críticas, clásicos, calificaciones, disney, hbo max, netflix, amazone prime, star plus, flow, paramount plus, crunchyroll, Acción, Aventuras, Ciencia Ficción, Comedia, Documental, Drama, Fantasía, Musical, Suspenso, Terror, Thriller, anime">
+    <meta name="description"
+        content="En Pochoclitos Blog encuentra las mejores recomendaciones de películas y series. Noticias, críticas, curiosidades e información de cine y las series del momento.">
+    <meta name="author" content="Pochoclitos Blog">
+    <link rel="icon" href="./images/icons/logo.png">
+    <title>Pochoclitos</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    </head>
+    <body class="body">
+    <header class="container__header">
+        <div class="nav__mobile-menu">
+            <a href="#nav" class="open">
+                <i class="bi bi-list"></i>
+            </a>
+            <a href="./pages/login.html"><i class="login-icon bi bi-person-circle"></i></a>
+        </div>
+
+        <nav id="nav" class="nav__container">
+            <a href="#" class="close">
+                <img src="images/icons/close.png" alt="Cerrar">
+            </a>
+
+            <ul class="nav__menu">
+                <div>
+                    <li><a href="./index.html"><img class="logo" id="inicio" src="images/icons/logo.png"
+                    alt="Logo-pochoclitos"></a> </li>
+                </div>
+                <li class="nav__menu-items nav__item-select"><a class="active" href="./index.html">INICIO</a></li>
+                <li class="nav__menu-items"><a href="./pages/about-us.html">NOSOTROS</a></li>
+                <li class="nav__menu-items"><a href="./pages/recommendation.html">RECOMENDACIONES</a></li>
+                <li class="nav__menu-items item-contacto"><a href="./pages/contact.html">CONTACTO</a></li>
+                <div class="nav__login-register">
+                    <li class="nav__menu-login"><a href="./pages/login.html">INICIAR SESIÓN</a></li>
+                    <li class="nav__menu-register">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn nav__menu-register text-white py-0 px-0 fw-semibold"
+                            data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            REGISTRARSE
+                        </button>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <!-- Modal -->
+    <div class="container">
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 pt-3" id="staticBackdropLabel">Registrarse:</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control bg-secondary bg-opacity-25"
+                                        placeholder="Nombre y Apellido" aria-label="First name">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control bg-secondary bg-opacity-25"
+                                        placeholder="Nombre de usuario" aria-label="First name">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control bg-secondary bg-opacity-25" id="inputEmail3"
+                                        placeholder="Correo electrrónico">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control bg-secondary bg-opacity-25" id="inputEmail3"
+                                        placeholder="Repetir correo electrrónico">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control bg-secondary bg-opacity-25"
+                                        id="inputPassword3" placeholder="Contraseña">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control bg-secondary bg-opacity-25"
+                                        id="inputPassword3" placeholder="Repetir contraseña">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-12">
+                                    <div class="form-chec custom-control custom-checkbox">
+                                        <input class="form-check-input custom-control-input" type="checkbox"
+                                            id="gridCheck">
+                                        <label class="form-check-label custom-control-label" for="gridCheck">
+                                            Suscríbete a nuestro Newsletter
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-register text-white fw-normal">Registrarse</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slider -->
+    <div class="slider">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/images_slider_mobile/img-slider-1.png" class="d-block w-100 d-md-none"
+                        alt="Imagen de slider 1">
+                    <img src="./images/images_slider_descktop/img-slider-1.png"
+                        class="d-none d-md-block heigth img-fluid" alt="Imagen de slider 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/images_slider_mobile/img-slider-2.png" class="d-block w-100 d-md-none"
+                        alt="Imagen de slider 2">
+                    <img src="./images/images_slider_descktop/img-slider-2.png"
+                        class="d-block w-100 d-none d-md-block heigth img-fluid" alt="Imagen de slider 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/images_slider_mobile/img-slider-3.png" class="d-block w-100 d-md-none"
+                        alt="Imagen de slider 3">
+                    <img src="./images/images_slider_descktop/img-slider-3.png"
+                        class="d-block w-100 d-none d-md-block heigth img-fluid" alt="Imagen de slider 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <main class="main">
+            <div class="main__texts">
+                <h3 class="main__texts-paragraph">A TU ALCANCE</h3>
+                <h1 class="main__texts-title">¡LAS MEJORES RECOMENDACIONES DE PELIS PARA VOS!</h1>
+            </div>
+            <div class="main__icons">
+                <img class="main__icons-img main__icons-img--d-none" src="./images/icons/logo.png" alt="Logo-pop-corn">
+                <img class="main__icons-img main__img-viedo--tape" src="./images/icons/home.png" alt="imagen-cinta">
+            </div>
+        </main>
+    </div>
+    <main class="main">
+        <div class="main__texts">
+            <h3 class="main__texts-paragraph">A TU ALCANCE</h3>
+            <h1 class="main__texts-title">¡LAS MEJORES RECOMENDACIONES DE PELIS PARA VOS!</h1>
+        </div>
+        <div class="main__icons">
+            <img class="main__icons-img main__icons-img--d-none" src="./images/icons/logo.png" alt="Logo-pop-corn">
+            <img class="main__icons-img main__img-viedo--tape" src="./images/icons/home.png" alt="imagen-cinta">
+        </div>
+    </main>
+    <div class="container__wpp-icon">
+        <div class="container__sections">
+            <section class="sections__cards">
+                <div class="sections__cards-card">
+                    <img class="sections__cards-card--img sections__cards-card--img--heigth"
+                        src="./images/imges_cards/img-card-1.png" alt="Imagen de la tarjeta 1">
+                    <div class="sections__cards-card-texts">
+                        <h4 class="
+                        sections__cards-card-texts--title sections__cards-card-texts--title---tablet">
+                            Willow
+                        </h4>
+                        <p class="sections__cards-card-texts--description">
+                            En las mazmorras del castillo de la malvada reina Bavmorda, una prisionera da a luz a una
+                            niña. Según una profecía, la niña será la que ponga fin al reinado de la hechicera. La
+                            comadrona intenta salvar a la niña de la ira de la reina, pero es perseguida por los perros
+                            y tiene que arrojar la cuna al río. Gracias a la corriente del río, la cuna llega a un
+                            pueblo de enanos, donde la niña es adoptada por Willow.
+                        </p>
+                        <p
+                            class="sections__cards-card-texts--description---tablet sections__cards-card-texts--description---tablet-margin">
+                            En PochoclitosBlog tenemos la mejor información sobre peliculas y series de todo tipo:
+                            datos, curiosidades, trailer y opiniones. Conoce más sobre <span>WILLOW</span> Aquí...
+                        </p>
+                        <a class="sections__cards-card-texts--btn" href="./pages/films/willow.html">
+                            Más Info <span class="sections__cards-card-texts--btn-decoration">+</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="sections__cards-card">
+                    <img class="sections__cards-card--img" src="./images/imges_cards/img-card-2.png"
+                        alt="Imagen de la tarjeta 2">
+                    <div class="sections__cards-card-texts">
+                        <h4 class="sections__cards-card-texts--title">
+                            Moon Knight
+                        </h4>
+                        <p class="sections__cards-card-texts--description">
+                            Moon Knight es uno de los personajes menos conocidos de los usuarios ajenos al mundo de los
+                            cómics de Marvel y, a su vez, uno de los más frágiles de sus historias. Tras un trauma
+                            infantil, Spector sufre un trastorno de personalidad múltiple y crea otras dos
+                            personalidades: Steven Grant y Jake Lockley.
+                        </p>
+                        <p class="sections__cards-card-texts--description---tablet">
+                            En PochoclitosBlog tenemos la mejor información sobre peliculas y series de todo tipo:
+                            datos, curiosidades, trailer y opiniones. Conoce más sobre <span>MOON KNIGHT</span> Aquí...
+                        </p>
+                        <a class="sections__cards-card-texts--btn" href="./pages/films/moonknight.html">
+                            Más Info <span class="sections__cards-card-texts--btn-decoration">+</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="sections__cards-card">
+                    <img class="sections__cards-card--img" src="./images/imges_cards/img-card-3.png"
+                        alt="Imagen de la tarjeta 3">
+                    <div class="sections__cards-card-texts">
+                        <h4 class="sections__cards-card-texts--title">
+                            Hombre Lobo
+                        </h4>
+                        <p class="sections__cards-card-texts--description">
+                            En una noche oscura, un grupo secreto de cazadores de monstruos emerge de las sombras y se
+                            reúne en el Templo Bloodstone tras la muerte de su líder. En un extraño y macabro homenaje a
+                            la vida del líder, los asistentes se ven inmersos en una misteriosa y mortal competición por
+                            una poderosa reliquia, una caza que les llevará a enfrentarse a un peligroso monstruo.
+                        </p>
+                        <p class="sections__cards-card-texts--description---tablet">
+                            En PochoclitosBlog tenemos la mejor información sobre peliculas y series de todo tipo:
+                            datos, curiosidades, trailer y opiniones. Conoce más sobre <span>HOMBRE LOBO</span> Aquí...
+                        </p>
+                        <a class="sections__cards-card-texts--btn" href="./pages/films/hombre-lobo.html">
+                            Más Info <span class="sections__cards-card-texts--btn-decoration">+</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="sections__cards-card">
+                    <img class="sections__cards-card--img" src="./images/imges_cards/img-card-4.png"
+                        alt="Imagen de la tarjeta 4">
+                    <div class="sections__cards-card-texts">
+                        <h4 class="sections__cards-card-texts--title">
+                            Obi Wan Kenobi
+                        </h4>
+                        <p class="sections__cards-card-texts--description">
+                            Obi-Wan es un caballero jedi de la antigua República Galáctica y, como tal, mentor de Anakin
+                            y Luke Skywalker. Kenobi es clave en la que casi es la extinción de los Jedi, las Guerras
+                            Clon, la caída de la República Galáctica y la lucha contra el posterior Imperio Galáctico.
+                        </p>
+                        <p class="sections__cards-card-texts--description---tablet">
+                            En PochoclitosBlog tenemos la mejor información sobre peliculas y series de todo tipo:
+                            datos, curiosidades, trailer y opiniones. Conoce más sobre <span>OBI-WAN</span> Aquí...
+                        </p>
+                        <a class="sections__cards-card-texts--btn" href="./pages/films/obi-wan-kenobi.html">
+                            Más Info <span class="sections__cards-card-texts--btn-decoration">+</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="sections__cards-pagination">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link">1</a></li>
+                            <li class="page-item"><a class="page-link">2</a></li>
+                            <li class="page-item"><a class="page-link">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+            <section class="section__navegation">
+                <section class="section__navegation-searcher">
+                    <form class="section__navegation-searcher-form">
+                        <input class="section__navegation-searcher-form--input" type="search"
+                            placeholder="Buscar película...">
+                        <button class="section__navegation-searcher-form--btn">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+                </section>
+                <div class="section__navegation--row">
+                    <div class="section__navegation-categories">
+                        <h4 class="section__navegation-categories--title">
+                            CATEGORIAS
+                        </h4>
+                        <ul class="section__navegation-categories-items">
+                            <li class="section__navegation-categories-items-list">
+                                <a class="section__navegation-categories-items-list--link" href="./pages/error-404.html">
+                                    Acción
+                                </a>
+                            </li>
+                            <li class="section__navegation-categories-items-list">
+                                <a class="section__navegation-categories-items-list--link" href="./pages/error-404.html">
+                                    Aventuras
+                                </a>
+                            </li>
+                            <li class="section__navegation-categories-items-list">
+                                <a class="section__navegation-categories-items-list--link" href="./pages/error-404.html">
+                                    Ciencia Ficción
+                                </a>
+                            </li>
+                            <li class="section__navegation-categories-items-list">
+                                <a class="section__navegation-categories-items-list--link" href="./pages/error-404.html">
+                                    Comedia
+                                </a>
+                            </li>
+                            <li class="section__navegation-categories-items-list">
+                                <a class="section__navegation-categories-items-list--link" href="./pages/error-404.html">
+                                    Documental
+                                </a>
+                            </li>
+                            <li class="section__navegation-categories-items-list">
+                                <a class="section__navegation-categories-items-list--link" href="./pages/error-404.html">
+                                    Drama
+                                </a>
+                            </li>
+                            <li class="section__navegation-categories-items-list">
+                                <a class="section__navegation-categories-items-list--link" href="./pages/error-404.html">
+                                    Fantasía
+                                </a>
+                            </li>
+                            <li class="section__navegation-categories-items-list">
+                                <a class="section__navegation-categories-items-list--link" href="./pages/error-404.html">
+                                    Musical
+                                </a>
+                            </li>
+                            <li class="section__navegation-categories-items-list">
+                                <a class="section__navegation-categories-items-list--link" href="./pages/error-404.html">
+                                    Suspenso
+                                </a>
+                            </li>
+                            <li class="section__navegation-categories-items-list">
+                                <a class="section__navegation-categories-items-list--link" href="./pages/error-404.html">
+                                    Terror
+                                </a>
+                            </li>
+                            <li class="section__navegation-categories-items-list">
+                                <a class="section__navegation-categories-items-list--link" href="./pages/error-404.html">
+                                    Thriller
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section__navegation-publicity">
+                        <aside class="section__navegation-publicity--img">
+                            <a href="/pages/error-404.html"><img class="section__navegation-publicity--box"
+                                    src="./images/publicity/publicity-1.png" alt="Publicidad"></a>
+                        </aside>
+                        <aside class="section__navegation-publicity--img">
+                            <a href="/pages/error-404.html"><img class="section__navegation-publicity--box"
+                                    src="./images/publicity/publicity-2.png" alt="Publicidad"></a>
+                        </aside>
+                        <aside class="section__navegation-publicity---img">
+                            <a href="/pages/error-404.html"><img class="section__navegation-publicity--box-descktop"
+                                    src="./images/publicity/publicity-descktop-1.png" alt=""></a>
+                        </aside>
+                        <aside class="section__navegation-publicity---img">
+                            <a href="/pages/error-404.html"><img class="section__navegation-publicity--box-descktop"
+                                    src="./images/publicity/publicity-descktop-2.png" alt=""></a>
+                        </aside>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+        <a href="./pages/error-404.html"><img class="wpp-icon" src="./images/icons/whatsapp.png" alt="Whatsapp"></a>
+    </div>
+    <footer class="container__footer">
+        <h2 class="footer__title">POCHOCLITOS</h2>
+        <div class="footer__container-contact">
+            <div class="footer__container-logo">
+                <img class="footer__logo" src="./images/icons/logo.png" alt="Logo">
+            </div>
+
+            <div class="footer__icons">
+                <a href="./pages/error-404.html"><i class="icon-redes bi bi-twitter text-white fs-1"></i></a>
+                <a href="./pages/error-404.html"><i class="icon-redes bi bi-instagram text-white fs-1"></i></a>
+                <a href="./pages/error-404.html"><i class="icon-redes bi bi-facebook text-white fs-1"></i></a>
+            </div>
+            <div class="footer__contact">
+                <p>Vía e-mail: pelis@pochoclitos.com</p>
+                <p>Redes sociales: @pochoclitos</p>
+                <p>Teléfono: 0123-4567</p>
+            </div>
+        </div>
+        <p class="footer__reserved">©Pochoclitos 2022 - Todos los derechos reservados.</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    </body>
+</html>
